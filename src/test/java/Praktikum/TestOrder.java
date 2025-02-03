@@ -71,7 +71,7 @@ import org.junit.Rule;
     }
 
     @Test
-    public void TestScooterOrderOrder() {
+    public void testScooterOrderOrder() {
         assertTrue("Кнопка Заказать в хедере не активна или не найдена", mainPage.isOrderButtonHeaderEnabled());
         mainPage.clickOrderButtonHeader();
         new OrderPage(driverRule.getDriver())
